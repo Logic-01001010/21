@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+
+.top{
+    -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.copy{
+    width: 100px;
+    height: 30px;
+    background-color: #00054e;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    color: rgb(204, 204, 204);
+}
+
+.copy:hover{
+    background-color: 	#000329;
+}
+
+.load{
+    width: 100px;
+    height: 30px;
+    background-color: 	#44008b;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    color: rgb(204, 204, 204);
+}
+
+.load:hover{
+    background-color: 	#320068;
+}
+
+.background{
+    width: 100%;
+    height: 450px;
+    /* background-color: rgb(50, 129, 208); */
+    background: url('../../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.site_title{
+    -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+
+    font-family: 'Nanum Myeongjo', serif;
+    width: 300px;
+    height: 200px;
+    font-size: 156px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 3px 10px rgb(0, 0, 0);
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 600px;
+    
+    margin-top: -250px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.input_box{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_box > input[type='text']{
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    
+    font-size: 24px;
+
+    width: 500px;
+    height: 40px;
+}
+
+.input_box > input[type='button']{
+    border-radius: 5px;
+    border: none;    
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.input_box > input[type='button']:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+    transition: all .2s;
+}
+
+.list_box{
+    -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 5px 0;
+    display: flex;
+    border-radius: 5px;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_box > .item{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 5px 0;
+    width: 550px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list_box > .item > .count{
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.list_box > .item.failed{
+    background-color: rgb(228, 228, 228);
+}
+
+.list_box > .item.failed > .count{
+    background: rgb(195,35,34);
+    background: linear-gradient(0deg, rgba(195,35,34,1) 0%, rgba(253,45,45,1) 100%);
+}
+
+.list_box > .item.check{
+    background-color: rgb(255, 255, 255);
+}
+
+.list_box > .item.check > .count{
+    background: rgb(174,193,238);
+    background: linear-gradient(212deg, rgba(174,193,238,1) 0%, rgba(239,250,13,1) 100%);
+}
+
+
+.list_box > .item.success_{
+    background-color: rgb(255, 255, 255);
+}
+
+.list_box > .item.success_ > .count{
+    background: rgb(84,195,34);
+    background: linear-gradient(0deg, rgba(84,195,34,1) 0%, rgba(45,253,81,1) 100%);
+}
+
+
+.list_box > .item > .contents{
+    width: 200px;
+    font-size: 24px;
+}
+
+.list_box > .item > .date{
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+}
+
+.list_box > .item > .extra{
+    width: 60px;
+    height: 40px;
+    padding-right: 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .2s;
+}
+
+.list_box > .item > .extra:hover{
+    color: rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+
+.list_box > .item .btn.hide ~ .more{
+    display: none;
+}
+
+.list_box > .item .more{
+    position: relative;
+    width: 150px;
+    right: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_box > .item .more:hover{
+    cursor: default;
+}
+
+.more > span{
+    width: 100px;
+}
+.success, .modify, .delete{
+    color: black;
+}
+.success:hover, .modify:hover, .delete:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.effect{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.effect.dayclear{
+    background: url('../../images/COOL.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.effect.allclear{
+    background: url('../../images/goal.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
